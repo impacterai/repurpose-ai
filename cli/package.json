@@ -1,0 +1,11 @@
+{
+  "name": "repurpose-ai-cli",
+  "version": "1.0.0",
+  "description": "AI content repurposer — turn any blog post into Twitter threads, LinkedIn posts, Instagram captions, email newsletters & more",
+  "bin": { "repurpose": "./cli.js" },
+  "keywords": ["ai","content","repurpose","twitter","linkedin","instagram","social-media","content-marketing","blog","thread","newsletter","tiktok","claude","writing","automation","seo"],
+  "author": "Billions AI <manny@impacteragi.com>",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/impacterai/repurpose-ai" },
+  "homepage": "https://journalists-conversation-sell-spider.trycloudflare.com"
+}
