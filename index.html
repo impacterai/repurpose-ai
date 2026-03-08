@@ -1,60 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Repurpose AI — Turn One Post Into Content for Every Platform</title>
-<meta name="description" content="Free AI content repurposer. Paste any blog post, get Twitter threads, LinkedIn posts, Instagram captions, email newsletters, TikTok scripts in seconds.">
-<meta name="keywords" content="AI content repurposer, twitter thread generator, linkedin post generator, content repurposing tool, AI writing tool">
-<meta property="og:title" content="Repurpose AI — Free AI Content Repurposer">
-<meta property="og:description" content="Turn one blog post into content for every platform. Twitter threads, LinkedIn posts, Instagram captions, emails & more.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://impacterai.github.io/repurpose-ai/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Repurpose AI — Free AI Content Repurposer">
-<meta name="twitter:description" content="Paste content → Get Twitter threads, LinkedIn posts, Instagram captions, emails & more in seconds.">
-<link rel="canonical" href="https://impacterai.github.io/repurpose-ai/">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"Repurpose AI","url":"https://impacterai.github.io/repurpose-ai/","description":"AI-powered content repurposing tool that transforms any content into platform-specific posts for Twitter, LinkedIn, Instagram, email, TikTok and more.","applicationCategory":"BusinessApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"3 free repurposes, then $19/mo for unlimited"},"operatingSystem":"Any","browserRequirements":"Modern web browser"}
-</script>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0a;color:#e0e0e0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem}
-.container{max-width:700px;text-align:center}
-h1{font-size:2.5rem;margin-bottom:1rem;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.tagline{font-size:1.3rem;color:#aaa;margin-bottom:2rem}
-.cta{display:inline-block;padding:1rem 2.5rem;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;text-decoration:none;border-radius:12px;font-size:1.2rem;font-weight:700;transition:transform .2s,box-shadow .2s}
-.cta:hover{transform:translateY(-2px);box-shadow:0 10px 40px rgba(102,126,234,.4)}
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin:3rem 0}
-.feature{background:#141414;padding:1.5rem;border-radius:12px;border:1px solid #222}
-.feature h3{font-size:1rem;margin-bottom:.5rem;color:#667eea}
-.feature p{font-size:.85rem;color:#888}
-.free{margin-top:1rem;color:#666;font-size:.9rem}
-.links{margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-.links a{color:#667eea;text-decoration:none;font-size:.85rem}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repurpose AI — Turn One Blog Post Into Content for Every Platform</title>
+  <meta name="description" content="Free AI content repurposing tool. Transform any blog post into Twitter threads, LinkedIn posts, Instagram captions, TikTok scripts, email newsletters and more. Try free, $29 lifetime.">
+  <meta name="keywords" content="content repurposing, AI content generator, twitter thread generator, linkedin post generator, instagram caption generator, content marketing tool, blog to social media, repurpose content AI">
+  <meta property="og:title" content="Repurpose AI — One Post, Every Platform">
+  <meta property="og:description" content="Transform any blog post into Twitter threads, LinkedIn posts, Instagram captions, TikTok scripts and more. Free AI tool.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://impacterai.github.io/repurpose-ai/">
+  <link rel="canonical" href="https://impacterai.github.io/repurpose-ai/">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;background:#0a0a1a;color:#e0e0e0;line-height:1.7}
+    .hero{text-align:center;padding:80px 20px 60px;max-width:800px;margin:0 auto}
+    h1{font-size:2.5em;color:#fff;margin-bottom:16px}
+    h1 span{background:linear-gradient(135deg,#6366f1,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .sub{font-size:1.2em;color:#999;margin-bottom:32px}
+    .cta{display:inline-block;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:16px 40px;border-radius:8px;text-decoration:none;font-size:1.2em;font-weight:bold;margin:8px}
+    .cta:hover{transform:scale(1.05);transition:0.2s}
+    .cta-secondary{background:transparent;border:2px solid #6366f1;color:#6366f1}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;max-width:900px;margin:40px auto;padding:0 20px}
+    .feature{background:#111;border:1px solid #222;border-radius:12px;padding:24px}
+    .feature h3{color:#fff;margin-bottom:8px}
+    .platforms{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:700px;margin:40px auto;padding:0 20px}
+    .platform{background:#111;border:1px solid #222;border-radius:8px;padding:10px 18px;font-size:0.95em}
+    .pricing{text-align:center;padding:60px 20px;background:#111;margin:40px 0}
+    .price-card{display:inline-block;background:#0a0a1a;border:2px solid #6366f1;border-radius:16px;padding:32px 40px;max-width:350px}
+    .price{font-size:3em;color:#fff;font-weight:bold}
+    .price-label{color:#999}
+    .api-section{max-width:700px;margin:40px auto;padding:0 20px}
+    .api-section pre{background:#111;border:1px solid #222;border-radius:8px;padding:16px;overflow-x:auto;font-size:0.9em;color:#8b5cf6}
+    footer{text-align:center;padding:40px;color:#666}
+    a{color:#6366f1}
+    .badge{display:inline-block;background:#1a1a2e;border:1px solid #333;border-radius:20px;padding:4px 14px;font-size:0.85em;margin:4px}
+  </style>
 </head>
 <body>
-<div class="container">
-<h1>🔄 Repurpose AI</h1>
-<p class="tagline">One post in, every platform out. AI does the rest.</p>
-<a href="https://journalists-conversation-sell-spider.trycloudflare.com" class="cta">Try It Free →</a>
-<div class="features">
-<div class="feature"><h3>🐦 Twitter Threads</h3><p>Hooks, numbered tweets, engagement optimized</p></div>
-<div class="feature"><h3>💼 LinkedIn Posts</h3><p>Storytelling format, professional tone</p></div>
-<div class="feature"><h3>📸 Instagram Captions</h3><p>Hashtags included, emoji-rich</p></div>
-<div class="feature"><h3>📧 Email Newsletters</h3><p>Subject lines + formatted body</p></div>
-<div class="feature"><h3>🎵 TikTok Scripts</h3><p>Timestamps, hooks, and CTAs</p></div>
-<div class="feature"><h3>📝 Blog Summaries</h3><p>SEO-optimized condensed versions</p></div>
-</div>
-<p class="free">✨ 3 free repurposes. No signup. No credit card.</p>
-<div class="links">
-<a href="https://journalists-conversation-sell-spider.trycloudflare.com/tools/twitter-thread-generator.html">Twitter Generator</a>
-<a href="https://journalists-conversation-sell-spider.trycloudflare.com/tools/linkedin-post-generator.html">LinkedIn Generator</a>
-<a href="https://journalists-conversation-sell-spider.trycloudflare.com/tools/instagram-caption-generator.html">Instagram Generator</a>
-<a href="https://journalists-conversation-sell-spider.trycloudflare.com/embed/">Embed Widget</a>
-<a href="https://github.com/impacterai/repurpose-ai">GitHub</a>
-</div>
-</div>
+  <div class="hero">
+    <h1><span>Repurpose AI</span></h1>
+    <p class="sub">Turn one blog post into content for every platform.<br>AI-powered. Free to try. $29 lifetime.</p>
+    <a class="cta" href="https://journalists-conversation-sell-spider.trycloudflare.com">🚀 Try Free Now</a>
+    <a class="cta cta-secondary" href="https://github.com/impacterai/repurpose-ai">⭐ Star on GitHub</a>
+    <br><br>
+    <span class="badge">✅ No signup required</span>
+    <span class="badge">🔒 MIT Open Source</span>
+    <span class="badge">⚡ Powered by Claude AI</span>
+  </div>
+
+  <div class="platforms">
+    <div class="platform">🐦 Twitter Threads</div>
+    <div class="platform">💼 LinkedIn Posts</div>
+    <div class="platform">📸 Instagram Captions</div>
+    <div class="platform">📧 Email Newsletters</div>
+    <div class="platform">🎬 TikTok Scripts</div>
+    <div class="platform">🔍 SEO Meta Tags</div>
+    <div class="platform">📝 Blog Summaries</div>
+    <div class="platform">📺 YouTube Descriptions</div>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <h3>⚡ Instant Repurposing</h3>
+      <p>Paste any content. Get platform-native versions in seconds. Each output respects character limits, hashtag conventions, and formatting best practices.</p>
+    </div>
+    <div class="feature">
+      <h3>🎯 8+ Platforms</h3>
+      <p>Twitter/X threads, LinkedIn posts, Instagram captions, email newsletters, TikTok scripts, SEO meta, blog summaries, YouTube descriptions.</p>
+    </div>
+    <div class="feature">
+      <h3>🔌 API + Web App</h3>
+      <p>Use the web interface or integrate via REST API. Embed widget available. CLI tool included. MIT licensed.</p>
+    </div>
+  </div>
+
+  <div class="pricing" id="pricing">
+    <h2 style="color:#fff;font-size:2em;margin-bottom:24px">Simple Pricing</h2>
+    <div class="price-card">
+      <div class="price-label">Lifetime Access</div>
+      <div class="price">$29</div>
+      <p class="price-label">One-time payment. No subscription. Forever.</p>
+      <br>
+      <a class="cta" href="https://checkout.persuadioai.com/b/5kQ00l1tS2hI1qP5JddIA0A">🔓 Get Lifetime Access</a>
+      <p style="color:#6366f1;margin-top:12px;font-size:0.9em">Use code LAUNCH50 for 50% off</p>
+    </div>
+  </div>
+
+  <div class="api-section">
+    <h2 style="color:#fff;margin-bottom:16px">API Quick Start</h2>
+    <pre>curl -X POST https://journalists-conversation-sell-spider.trycloudflare.com/api/repurpose \
+  -H "Content-Type: application/json" \
+  -d '{
+    "content": "Your blog post text here...",
+    "formats": ["twitter_thread", "linkedin_post", "instagram_caption"]
+  }'</pre>
+  </div>
+
+  <footer>
+    <p>Built by <a href="https://github.com/impacterai">Impacter AI</a> | <a href="https://github.com/impacterai/repurpose-ai">GitHub</a></p>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Repurpose AI",
+    "description": "AI content repurposing tool that transforms blog posts into Twitter threads, LinkedIn posts, Instagram captions, email newsletters, TikTok scripts, and more.",
+    "url": "https://impacterai.github.io/repurpose-ai/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "29",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
 </body>
 </html>
